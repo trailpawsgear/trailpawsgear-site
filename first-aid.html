@@ -27,10 +27,14 @@
   .cat-header .tag{font-size:13px;font-weight:700;color:var(--rust);text-transform:uppercase;letter-spacing:0.06em;}
   .cat-header h1{font-size:clamp(36px,5.5vw,56px);text-transform:none;letter-spacing:0;margin-top:14px;}
   .cat-header p{max-width:560px;font-size:17px;opacity:0.78;margin-top:16px;}
-  .empty{padding:64px 0 100px;}
-  .empty-box{border:1px dashed var(--line);padding:40px 32px;max-width:480px;}
-  .empty-box p{margin:0 0 18px;opacity:0.75;}
-  .empty-box a{color:var(--rust);font-weight:600;text-decoration:underline;}
+  .guides{padding:40px 0 90px;}
+  .guide-row{display:grid;grid-template-columns:120px 1fr auto;gap:24px;align-items:center;padding:26px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--charcoal);}
+  .guide-row:last-child{border-bottom:1px solid var(--line);}
+  .guide-tag{font-size:13px;font-weight:700;color:var(--rust);text-transform:uppercase;letter-spacing:0.05em;}
+  .guide-title{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:24px;text-transform:none;letter-spacing:0;line-height:1.15;}
+  .guide-meta{font-size:14px;opacity:0.6;margin-top:6px;}
+  .guide-arrow{font-size:22px;opacity:0.4;justify-self:end;}
+  @media (max-width:640px){.guide-row{grid-template-columns:1fr;gap:8px;}.guide-arrow{display:none;}}
   footer{padding:48px 0 60px;font-size:14px;}
   .footer-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;}
   .footer-links{display:flex;gap:22px;flex-wrap:wrap;opacity:0.7;}
@@ -60,11 +64,15 @@
   <p>What to actually carry, based on real trail incidents.</p>
 </div>
 
-<div class="empty wrap">
-  <div class="empty-box">
-    <p>We're still researching and writing guides for this category — nothing published here yet.</p>
-    <a href="/">← Back to the homepage</a>
-  </div>
+<div class="guides wrap">
+  <a href="/best-dog-trail-first-aid-kits.html" class="guide-row">
+    <span class="guide-tag">Trail First Aid</span>
+    <div>
+      <div class="guide-title">The Best Dog First Aid Kits for the Trail in 2026</div>
+      <div class="guide-meta">4 kits compared on contents, weight, and coverage</div>
+    </div>
+    <span class="guide-arrow">→</span>
+  </a>
 </div>
 
 <footer>
